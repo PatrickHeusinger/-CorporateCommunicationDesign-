@@ -1,0 +1,289 @@
+ body {
+     font-family: sans-serif;
+     margin: 0;
+ }
+ /*-----------------------------------hover-------javascript------------------------------------*/
+ 
+ .whiteTextHover {
+     color: white;
+ }
+ 
+ .blueBackgroundHover {
+     background-color: blue;
+ }
+ /*-----------------------------------------------------fixed header-----------------*/
+ 
+ .headline h1 {
+     width: 600px;
+     margin-top: 50px;
+     margin-left: 50px;
+     position: fixed;
+     top: 0;
+ }
+ /* --------------------------------------navbar section------------------------------------------ */
+ 
+ .navbar-toggler {
+     margin-top: 35px;
+     margin-right: 50px;
+     border: none !important;
+     color: black;
+ }
+ 
+ .navbar-light .navbar-toggler {
+     color: transparent;
+ }
+ 
+ .btn-close {
+     display: none;
+ }
+ 
+ .offcanvas {
+     width: 150px;
+     background-color: #0000ff;
+ }
+ 
+ .nav-item {
+     margin: 5px;
+ }
+ 
+ .menu {
+     background-image: linear-gradient( transparent 0%, transparent 90%, white, white);
+     background-repeat: no-repeat;
+     background-size: 0% 100%;
+     background-position-x: right;
+     transition: background-size 300ms;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .menu:hover {
+     background-size: 100% 100%;
+     background-position: left;
+     color: white;
+ }
+ /* main section---------------------------------------------------- */
+ 
+ .headline h1 {
+     font-size: 25px;
+ }
+ 
+ .pic_color img {
+     width: 400px;
+     object-fit: cover;
+ }
+ 
+ .pic_undertext {
+     margin-top: 5px;
+     line-height: 25px;
+     font-size: 22px;
+     margin-bottom: 0px !important;
+     padding-bottom: 0px !important;
+ }
+ 
+ .direction {
+     margin-top: 0px !important;
+     padding-top: 0px !important;
+ }
+ 
+ .container {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 150px;
+ }
+ 
+ .scroll_button {
+     padding: 10px;
+     border-radius: 5px;
+     background-color: white;
+     border: solid gray 1px;
+     color: gray;
+     text-decoration: none;
+     margin-left: 50px;
+ }
+ 
+ .scroll_button:hover {
+     color: white;
+     background-color: rgb(43, 39, 39);
+ }
+ 
+ .scroll_div {
+     margin-top: 150px;
+ }
+ 
+ footer {
+     height: 150px;
+ }
+ /* media section ---------------------------------------------------------*/
+ 
+ @media (max-width: 1250px) {
+     .container {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 50px;
+     }
+     .pic_color {
+         margin-top: 150px;
+     }
+     .pic_color img {
+         width: 350px;
+     }
+     .pic_undertext {
+         font-size: 18px;
+     }
+     .project img {
+         margin-top: 50px;
+     }
+ }
+ 
+ @media (max-width:800px) {
+     .headline h1 {
+         width: 290px;
+         font-size: 24px;
+     }
+     body {
+         background-color: blue !important;
+         color: white;
+     }
+     .pic_undertext {
+         color: white;
+     }
+     .direction {
+         color: white;
+     }
+ }
+ 
+ @media (max-width:400px) {
+     .headline h1 {
+         width: 190px;
+         font-size: 18px;
+     }
+ }
+ /* project container section --------------------------------------------- */
+ 
+ .project img {
+     object-fit: cover;
+     width: 600px;
+ }
+ 
+ .project_text {
+     width: 600px;
+ }
+ 
+ .project_text p {
+     font-size: 20px;
+     text-align: left;
+     padding-left: 10px;
+ }
+ 
+ .project {
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 65px;
+ }
+ 
+ .top_margin {
+     margin-top: 150px;
+ }
+ /*--project--folder--blickwinkel--microsite-------------------------------------*/
+ 
+ .microsite_text {
+     font-size: 50px;
+     margin-left: 50px;
+     margin-top: 150px;
+ }
+ 
+ .microsite_text a {
+     background-image: linear-gradient( transparent 0%, transparent 90%, blue, blue);
+     background-repeat: no-repeat;
+     background-size: 0% 100%;
+     background-position-x: right;
+     transition: background-size 300ms;
+     color: blue;
+     text-decoration: none;
+ }
+ 
+ .microsite_text a:hover {
+     background-size: 100% 100%;
+     background-position: left;
+     color: blue;
+ }
+ /*--project medias----------------------------------------------------------------------------*/
+ 
+ @media (max-width: 1250px) {
+     .project {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 0px;
+     }
+     .top_margin {
+         margin-top: 200px;
+     }
+     .project_text {
+         width: 350px;
+         margin-top: 0px;
+         padding-top: 0px;
+     }
+     .project_text p {
+         font-size: 20px;
+         text-align: left;
+         padding: 10px;
+         margin-top: 50px;
+     }
+ }
+ 
+ @media (max-width: 700px) {
+     .project img {
+         width: 350px;
+         margin-bottom: 50px;
+     }
+     .projectImg {
+         margin-bottom: 0px;
+     }
+     .project {
+         margin-bottom: 0px;
+     }
+ }
+ /* about section -----------------------------------------------------------*/
+ 
+ .about_div {
+     width: 600px;
+     margin-top: 150px;
+     margin-left: 50px;
+ }
+ 
+ @media (max-width: 1000px) {
+     .about_div {
+         width: 300px;
+     }
+ }
+ /* contact section ------------------------------------------------------------------------------*/
+ 
+ .contact {
+     width: 300px;
+     margin-top: 150px;
+     margin-left: 50px;
+     font-size: 25px;
+ }
+ /* impressum section ---------------------------------------------------------------------------------------*/
+ 
+ .impressum {
+     margin-top: 50px;
+     margin-left: 50px;
+     width: 550px;
+ }
+ 
+ .impressum a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .imp h1 {
+     font-size: 25px;
+     position: static;
+ }
+ 
+ @media (max-width: 700px) {
+     .impressum {
+         width: 300px;
+     }
+ }
